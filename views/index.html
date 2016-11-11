@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<head>
+	<title>Track</title>
+</head>
+<body>
+	<header>
+		<div class="col-md-1 logoDisplay" >
+			<figure>
+				<img class="logo" src="https://cdn2.iconfinder.com/data/icons/business-roundline/512/deadline-512.png">
+			</figure>
+			<p>DEAD</p>
+		</div>
+		<div class="col-md-11 LogoTitleDisplay">
+			<h1 class="Title">Deadline Guard</h1>
+			<p>Subject Tracking Dashboard.</p>
+		</div>
+	</header>
+
+	<nav class="col-md-1 slidebar">
+		<ul class="nav">
+			<li>
+				<a href="/"><img class="icon" src="./img/dashboard.png"></a>
+			</li>
+			<li>
+				<a href="/list"><img class="icon" src="./img/list.png"></a>
+			</li>
+			<li>
+				<a href="/upload"><img class="icon" src="./img/upload.png"></a>
+			</li>
+			<li>
+				<a href="/logo"><img class="icon" src="./img/logo.png"></a>
+			</li>
+		</ul>
+	</nav>
+
+	<article class="col-md-11 context">
+		<section class="col-md-12 bulletin">
+			<h1 style="text-align: center;border-bottom: 1px solid rgba(0,0,0, 0.4);padding-bottom: 10px;">公告事項</h1>
+			<p>1.刪除功能目前無法使用</p>
+			<p>2.編輯功能異常無法使用</p>
+			<p>3.上傳功能已完成，愈加入備註功能</p>
+		</section>
+		<section class="col-md-12 holl-row">
+			<div class="col-md-4 item">
+				<h1 id="eventAmount">0</h1>
+				<p>事件數量</p>
+			</div>
+			<div class="col-md-4 item">
+				<h1 id="deadAmount">0</h1>
+				<p>死線過半數量</p>
+			</div>
+			<div class="col-md-4 item" style="border:none;">
+				<h1 id="deadPer" style="color:#D30C7B;">0%</h1>
+				<p>死線逼近率</p>
+			</div>
+		</section>
+		<section class="col-md-12 list-table">
+			<table class="table table-images">
+                <thead>
+                  <tr>
+                    <td>處理事項</td>
+                    <td>開始日期</td>
+                    <td>截止日期</td>
+                    <td>剩餘天數</td>
+                    <td>剩餘天數進度條</td>
+                  </tr>
+                </thead>
+                <tbody id="main">
+                </tbody>
+            </table>
+		</section>
+	</article>
+</body>
+</html>
+<script type="text/javascript" src="javascripts/indexCtrl.js"></script>

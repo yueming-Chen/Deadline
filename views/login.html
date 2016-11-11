@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+
+<!-- 最新編譯和最佳化的 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- 選擇性佈景主題 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!-- 最新編譯和最佳化的 JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<head>
+	<title>食譜管理系統 v2.0.1</title>
+</head>
+<body>
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div id='main' class="row">
+            <div class="widget-header">
+              <h2><img class="icon" style="width:35px;height: 35px;" 
+              src="https://card.sinopac.com/images/iconNetworkMembersArea01.png" alt="">
+              Account Authorization</h2>
+            </div>
+            <div class="widget-context">
+              <fieldset>
+              <legend>帳號登入</legend>
+                <form class="form-horizontal">
+                    <div class="form-group">
+	                    <div class="col-md-3">
+	                      <label class="control-label" for="email">帳號</label>
+	                    </div>
+	                    <div class="col-md-9">
+	                      <input type="text" class="form-control" id="account" placeholder="Enter account">
+	                    </div>
+                  	</div>
+                    <div class="form-group">
+	                    <div class="col-md-3">
+	                      <label class="control-label" for="password">密碼</label>
+	                    </div>
+	                    <div class="col-md-9">
+	                      <input type="password" class="form-control" id="password" placeholder="Enter password">
+	                    </div>
+                  	</div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button id="submit" type="button" class="btn btn-danger">登入</button>
+                      <button id="cancel" type="button" class="btn btn-default">取消</button>
+                    </div>
+                  </div>
+                </form>
+              </fieldset>
+            </div><!--widget-context-->
+          </div><!--main-->
+        </div>
+</body>
+</html>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src='./javascripts/loginCtrl.js'></script>

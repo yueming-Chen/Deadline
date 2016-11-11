@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+<link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+<head>
+  <title>Track</title>
+</head>
+<body>
+  <header>
+    <div class="col-md-1 logoDisplay" >
+      <figure>
+        <img class="logo" src="https://cdn2.iconfinder.com/data/icons/business-roundline/512/deadline-512.png">
+      </figure>
+      <p>DEAD</p>
+    </div>
+    <div class="col-md-11 LogoTitleDisplay">
+      <h1 class="Title">Deadline Guard</h1>
+      <p>Subject Tracking Dashboard.</p>
+    </div>
+  </header>
+
+  <nav class="col-md-1 slidebar">
+    <ul class="nav">
+      <li>
+        <a href="/"><img class="icon" src="./img/dashboard.png"></a>
+      </li>
+      <li>
+        <a href="/list"><img class="icon" src="./img/list.png"></a>
+      </li>
+      <li>
+        <a href="/upload"><img class="icon" src="./img/upload.png"></a>
+      </li>
+      <li>
+        <a href="/logo"><img class="icon" src="./img/logo.png"></a>
+      </li>
+    </ul>
+  </nav>
+
+  <article class="col-md-11 context">
+    <section class="col-md-12 bulletin">
+      <div class="col-md-12 header-title">
+        <h1>事件上傳</h1>
+      </div>
+      <div class="col-md-12 input-bar">
+        <p>事件名稱</p>
+        <input type="text" name="event" id="event">
+      </div>
+      <div class="col-md-12 input-bar">
+        <p>開始日期</p>
+        <input type="text" name="event" id="start" placeholder="yyyy/mm/dd">
+      </div>
+      <div class="col-md-12 input-bar">
+        <p>截止日期</p>
+        <input type="text" name="event" id="due" placeholder="yyyy/mm/dd">
+      </div>
+      <div class="col-md-12">
+        <button type="button" name="submit" id="submit" class="btn btn-default">submit</button>
+        <button type="button" name="cancel" class="btn btn-danger">cancel</button>
+      </div>
+    </section>
+  </article>
+</body>
+</html>
+<script type="text/javascript" src="./javascripts/uploadCtrl.js"></script>
