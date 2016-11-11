@@ -8,7 +8,7 @@ var routes = require('./routes/index');
 var Api = require('./routes/Api');
 var ejs = require('ejs');//2.5.1
 /*4個分頁*/
-var list = require('./routes/List');
+var list = require('./routes/list');
 var Modify = require('./routes/modify');
 var Upload = require('./routes/Upload');
 var login = require('./routes/login');
