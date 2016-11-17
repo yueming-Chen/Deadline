@@ -52,10 +52,12 @@ figure .logo{
 .slidebar{
 	background: #0F7173;
 	height: 100%;	
+	overflow: hidden;
+	margin-bottom: -1000px;
+	padding-bottom: 1000px;
 }
 
 .nav{
-	height: 1000px;
 	padding-top: 30px;
 	list-style: none;
 	text-align: center;
@@ -79,7 +81,10 @@ table .icon{
 .context{
 	font-family: 'Roboto', sans-serif;
 	background: #E7ECEF;
-	height: 10000px;
+	height: 100%;
+	overflow: hidden;
+	margin-bottom: -1000px;
+	padding-bottom: 1000px;
 }
 /*bulletin*/
 .bulletin{
